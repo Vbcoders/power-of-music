@@ -1,7 +1,10 @@
 let progress = document.getElementById('progress');
 let cntrl = document.getElementById('cntrl');
 let song = document.getElementById('song');
-      
+      song.onloadedmetadata = function(){
+        progress.max = song.duration;
+progress.value = song.currentTime;
+      }
       function playPause(){
     if(cntrl.classList.contains('fa-pause')){
           song.pause();
@@ -31,9 +34,7 @@ let cntrl2 =document.getElementById('cntrl2');
 let song2 = document.getElementById('song2');
       song2.onloadedmetadata = function(){
         progress2.max = song2.duration;
-progress2.value = song2
-        currentTime;
-song2.pause();
+progress2.value = song2.currentTime;
       }
       function play(){
     if(cntrl2.classList.contains('fa-pause')){
@@ -64,9 +65,7 @@ let cntrl3 =document.getElementById('cntrl3');
 let song3 = document.getElementById('song3');
       song3.onloadedmetadata = function(){
         progress3.max = song3.duration;
-progress3.value = song3
-        currentTime;
-      song3.pause();
+progress3.value = song3.currentTime;
       }
       function play3(){
     if(cntrl3.classList.contains('fa-pause')){
@@ -97,9 +96,7 @@ let cntrl4 =document.getElementById('cntrl4');
 let song4 = document.getElementById('song4');
       song4.onloadedmetadata = function(){
         progress4.max = song4.duration;
-progress4.value = song4
-        currentTime;
-       song4.pause();
+progress4.value = song4.currentTime;
       }
       function play4(){
     if(cntrl4.classList.contains('fa-pause')){
@@ -130,9 +127,7 @@ let cntrl5 =document.getElementById('cntrl5');
 let song5 = document.getElementById('song5');
       song5.onloadedmetadata = function(){
         progress5.max = song5.duration;
-progress5.value = song5
-        currentTime;
-       song5.pause();
+progress5.value = song5.currentTime;
       }
       function play5(){
     if(cntrl5.classList.contains('fa-pause')){
