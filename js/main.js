@@ -2,31 +2,32 @@ let progress = document.getElementById('progress');
 let cntrl = document.getElementById('cntrl');
 let song = document.getElementById('song');
    window.onload=()=>{
-song.stop();
-song2.stop();
-song3.stop();
-song4.stop();
-song5.stop();
+song.pause();
+song2.pause();
+song3.pause();
+song4.pause();
+song5.pause();
 }
 window.onloadend = () => {
-  song.stop();
-song2.stop();
-song3.stop();
-song4.stop();
-song5.stop();
+ song.pause();
+song2.pause();
+song3.pause();
+song4.pause();
+song5.pause();
 }
 window.onloaded = () => {
- song.stop();
-song2.stop();
-song3.stop();
-song4.stop();
-song5.stop();
+ song.pause();
+song2.pause();
+song3.pause();
+song4.pause();
+song5.pause();
 }
 window.onloadstart = () => {
- song.stop();
-song2.stop();
-song3.stop();
-song4.stop();
+ song.pause();
+song2.pause();
+song3.pause();
+song4.pause();
+song5.pause();
 song5.stop();
 }
       song.onloadedmetadata = function(){
