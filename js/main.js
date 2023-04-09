@@ -1,12 +1,7 @@
 let progress = document.getElementById('progress');
 let cntrl = document.getElementById('cntrl');
 let song = document.getElementById('song');
-      song.onloadedmetadata = function(){
-        progress.max = song.duration;
-progress.value = song
-        currentTime;
-        song.pause();
-      }
+      
       function playPause(){
     if(cntrl.classList.contains('fa-pause')){
           song.pause();
