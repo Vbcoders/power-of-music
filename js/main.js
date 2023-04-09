@@ -1,6 +1,9 @@
 let progress = document.getElementById('progress');
 let cntrl = document.getElementById('cntrl');
 let song = document.getElementById('song');
+window.onload = function () {
+   window.location.reload()
+}
    window.onload=()=>{
 song.pause();
 song2.pause();
