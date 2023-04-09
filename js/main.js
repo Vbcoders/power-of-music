@@ -5,6 +5,7 @@ let song = document.getElementById('song');
         progress.max = song.duration;
 progress.value = song
         currentTime;
+     song.pause();
       }
       function playPause(){
     if(cntrl.classList.contains('fa-pause')){
@@ -37,6 +38,7 @@ let song2 = document.getElementById('song2');
         progress2.max = song2.duration;
 progress2.value = song2
         currentTime;
+song2.pause();
       }
       function play(){
     if(cntrl2.classList.contains('fa-pause')){
@@ -69,6 +71,7 @@ let song3 = document.getElementById('song3');
         progress3.max = song3.duration;
 progress3.value = song3
         currentTime;
+      song3.pause();
       }
       function play3(){
     if(cntrl3.classList.contains('fa-pause')){
@@ -101,6 +104,7 @@ let song4 = document.getElementById('song4');
         progress4.max = song4.duration;
 progress4.value = song4
         currentTime;
+       song4.pause();
       }
       function play4(){
     if(cntrl4.classList.contains('fa-pause')){
@@ -133,6 +137,7 @@ let song5 = document.getElementById('song5');
         progress5.max = song5.duration;
 progress5.value = song5
         currentTime;
+       song5.pause();
       }
       function play5(){
     if(cntrl5.classList.contains('fa-pause')){
