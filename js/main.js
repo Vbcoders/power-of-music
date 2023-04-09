@@ -2,7 +2,8 @@ let progress = document.getElementById('progress');
 let cntrl = document.getElementById('cntrl');
 let song = document.getElementById('song');
       song.onloadedmetadata = function(){
-        alert("Loaded all songs");
+        song.stop();
+alert("song1 stoped onload");
       }
       function playPause(){
     if(cntrl.classList.contains('fa-pause')){
