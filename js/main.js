@@ -3,7 +3,10 @@ let cntrl = document.getElementById('cntrl');
 let song = document.getElementById('song');
       song.onloadedmetadata = function(){
         song.stop();
-alert("song1 stoped onload");
+        progress.max = song.duration;
+progress.value = song
+        currentTime;
+        alert("song1 stoped onload");
       }
       function playPause(){
     if(cntrl.classList.contains('fa-pause')){
